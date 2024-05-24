@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MauiUebung.ViewModels"
+             x:DataType="viewmodel:UebungViewModel"
+             x:Class="MauiUebung.MainPage">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto">
+
+        <Entry Grid.Row="0" Text="{Binding Zahl}"/>
+        <Entry Grid.Row="1" Text="{Binding Zweitezahl}"/>
+        <Button Grid.Row="2" Text="Summe bilden" Command="{Binding SumCommand}"/>
+        <Label Grid.Row="3" Text="{Binding Output}"/>
+    </Grid>
+   
+
+
+</ContentPage>
